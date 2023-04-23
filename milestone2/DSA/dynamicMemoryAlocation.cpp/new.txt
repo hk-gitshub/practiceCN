@@ -1,0 +1,19 @@
+our data store in two types of memory. stack (statically) and heap (dynamically)
+
+dynamic memory alocate using new keyword.
+
+=> For int : 
+
+it will be "new int". so 4 byte int memory made on heap.
+and we store it's address in pointer which made on stack
+
+syntax: int * p = new int;
+        char *pc = new char;
+        double *pd= new double;
+
+for array: int *arr = new int[10];
+
+            int n;
+            cin>>n;
+            int *arr = new int[n];
+

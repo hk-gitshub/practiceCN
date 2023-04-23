@@ -1,0 +1,25 @@
+1D array: int arr[4];
+
+2D array: int arr[row][col];
+
+input takes like: 3x4 matrix
+
+['', '', '', '', ''] => 1st row takes 4 column input
+['', '', '', '', ''] => 2nd ...
+['', '', '', '', ''] => 3rd ...
+
+=> how to actually store 2d array
+
+int arr[][2] = {{5,6}, {1,3}, {3,7}};
+
+actually 2D array store element in single array not like matrix like our visulaization
+
+so simple  formula for placed array element;
+
+int arr[r][c];
+
+For arr[i][j] position Formula 
+    
+    => c*i + j
+
+-> whenever we create funtion for 2D arrays, it is require to pass or declare columns length becuase of it's store element base on above formula.

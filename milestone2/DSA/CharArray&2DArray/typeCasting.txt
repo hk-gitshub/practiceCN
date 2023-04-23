@@ -1,0 +1,8 @@
+convert int to character =>  
+ {
+ int count = 2;
+    string new_string="";
+    new_string = new_string + (char)(count+'0');
+    
+    std::cout <<new_string<< std::endl;
+ }

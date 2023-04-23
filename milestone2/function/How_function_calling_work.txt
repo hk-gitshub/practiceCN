@@ -1,0 +1,15 @@
+advantage of function is 
+
+easy to testing 
+readable
+stop repetitive
+
+function work on call stack style(lifo)
+
+f2()
+f1()
+main()
+-----------------------------------------
+pass by value:
+
+it's not giving variable access to function. just passing the value.

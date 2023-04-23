@@ -1,0 +1,9 @@
+array is similar list of kind of elements.
+which store same data type.
+
+arr declaration => int arr[10]; => data_type name [length]; 
+
+It'll create 40 bytes of block which means 4 byte/int 
+
+intialization int arr[0] = 5; arr[1]=10;
+

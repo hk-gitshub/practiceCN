@@ -1,0 +1,9 @@
+recursion is function called itself;
+
+for every recursion problem use PMI method 
+
+3 step:
+
+1. Base case: prove f(0) & f(1) is true.
+2. Assume that already proved for small problem: Assume f(i) is true for all i <= k.
+3. using that small problem asumption proved that big problem (and do the correctly coding): use "2" statement to prove f(k+1) is true.

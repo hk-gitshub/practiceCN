@@ -1,0 +1,42 @@
+stirng is 1D character array.
+
+char name[100];
+
+cin>>name; // hardik
+
+we don't need for loop like int array to get user input or print output. 
+we can directly put char array.
+
+In char array, array automatically put null character "\0"  as terminate the array.
+
+h|a|r|d|i|K|\0| | | |....| |
+
+like this
+
+-------------------------------------------------
+
+string for multiple words:
+
+we can't take user input for multiple word using "cin".
+
+so solution is cin.getline() function 
+
+cin.getline(string_name, length, delimeter[optional]);
+--------------------------------------------------------------
+
+strirng inbuilt function
+
+1. length of the string: strlen()
+
+2. compare 2 strings : 
+
+=> strcmp(str1, str2); : returns 0 if both are equal else returns non zero value
+
+3. copy string : 
+
+=> strcpy( destination_str, source_str);
+
+4. copy 1st N number of character to be copy : 
+
+=> strncpy(destination_str, source_str, n);
+
