@@ -17,6 +17,13 @@ void shiftChar(char input[], int size){
 	shiftChar(input, size-1);
 }
 
+void shiftChar2(char input[], int size){		// just for practice purpose
+
+	if(input[0] == '\0') return;
+	shiftChar2(input+1, size-1);
+	input[size+2] = input[size];
+}
+
 void replacePi(char input[]) {
 	
 	if(input[0] == '\0') return;
