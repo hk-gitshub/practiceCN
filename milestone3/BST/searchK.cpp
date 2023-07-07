@@ -81,11 +81,28 @@ bool isBST2(binaryTreeNode<int>* root){
 	return isBST2Check(root).isBST;
 }
 
+//isBST3 started
+
+bool isBST3(binaryTreeNode <int> * root, int min=INT_MIN, int max=INT_MAX){
+	if(root==NULL) return true;
+
+	if(root->data<min || root->data>max){
+		return false;
+	}
+
+	bool leftOk=isBST3(root->left, min, root->data-1);
+	bool rightOk=isBST3(root->right, root->data, max);
+
+	return leftOk && rightOk;
+}
+
 //4 2 6 1 3 5 7 -1 -1 -1 -1 -1 -1 -1 -1
+//4 2 6 1 10 5 7 -1 -1 -1 -1 -1 -1 -1 -1
 int main(){
     binaryTreeNode <int> * root=takeInputLevelWise();
     printLevelWise(root);
 	cout<<"checki if binary tree is BST or not by isBST1: "<<isBST1(root)<<endl;
 	cout<<"checki if binary tree is BST or not by isBST2: "<<isBST2(root)<<endl;
+	cout<<"checki if binary tree is BST or not by isBST3: "<<isBST3(root)<<endl;
 
 }
