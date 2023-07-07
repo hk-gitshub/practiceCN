@@ -1,0 +1,63 @@
+OOPs :
+    -> class
+    -> object
+
+class is the blueprint that defines properties and function of the object.
+class is also a user define data types.
+
+object is sepecific copy of class.
+
+creating class:
+
+class class_name{
+
+};
+
+----------------------
+* getter and setter : it's function to make use private property value like modify delete and display the private propertiy value.
+
+* constructor:
+
+    -> same name as class
+    -> No return type
+    -> No input arguments
+
+Default constructor: automatically call constructor as creation of object
+
+class_name(){
+
+}
+
+---------------------
+* this keyword: it's hold the address of current object
+
++-------------------------------------
+* copy constructor:
+    -> student s1(10, 101);
+    -> student s2(s1);
+
+* copy assignment operator(=)
+    -> student s1(10, 101);
+    -> student s2(20, 102);
+    -> s2=s1;   //for copy all 's1' data to 's2'
+-----------------------------------------------
+
+* Destructor: 
+    -> automatically call when end of the main function  
+    -> can make our own Destructor
+    -> destructor is automatic if we dont define it
+
+    ~student(){
+
+    }
+-------------------------------------------------
+initialization list:
+    -> it's used for initialize the value of const and reference variables using constructor.
+
+--------------------------------------------------
+static keyword:
+    -> the give static properties it's belong to class not object
+    -> all objects belong to same one property 
+    -> declare static property in class
+    -> initialization of static property is outside of class
+    -> like.. class_name{}; class_name :: static_property_name = value;

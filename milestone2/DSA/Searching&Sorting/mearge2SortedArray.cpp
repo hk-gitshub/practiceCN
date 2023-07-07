@@ -16,10 +16,10 @@
          ans[i] = arr2[n];
          n++;
        }
-    } else if (m >= size1) {
+    } else if (m == size1) {
       ans[i] = arr2[n];
       n++;
-    } else if (n >= size2) {
+    } else if (n == size2) {
       ans[i] = arr1[m];
       m++;
     }

@@ -1,0 +1,9 @@
+array save continous element but array has one problem is size of arraym that solve by linked list data structure.
+
+Linked list un-continous data structure. we can add as many as element we want.
+
+Linked list made base on node class contain:
+    -> data store on variables
+    -> node pointer that store address of next node.
+    -> start of the Linked list called Head.
+    -> end of the Linked list called tail.

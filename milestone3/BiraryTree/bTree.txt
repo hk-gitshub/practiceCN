@@ -1,0 +1,8 @@
+Binary tree has max 2 child
+
+we make 2 child left and right child node
+
+level order => print in lever
+pre order   => print node => left => right
+post order  => print left(most) => right => node
+in order    => print left => node => right

@@ -1,0 +1,5 @@
+main properties for BST
+
+every node n in BST:
+        -> left subtree of a n's node is always less than its value, 
+        -> right subtree is greater than n's value.
