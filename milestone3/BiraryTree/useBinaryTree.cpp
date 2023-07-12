@@ -119,18 +119,18 @@ bool isNodePresent(binaryTreeNode<int> *root, int x) {
     }
 }
 
-int max(binaryTreeNode<int>* p1, binaryTreeNode<int>* p2){
-	if(p1->data > p2->data){
-		return p1->data;
+int Max(int p1, int p2){
+	if(p1 > p2){
+		return p1;
 	} else{
-		return p2->data;
+		return p2;
 	}
 }
 
 int height(binaryTreeNode<int>* root) {
     if(root==NULL) return 0; 
 
-	int h=max(height(root->left), height(root->right));
+	int h=Max(height(root->left), height(root->right));
 
 	return h+1;
 
@@ -201,5 +201,5 @@ int main(){
     preOrder(root);
     cout<<" \npost-order traversal:"<<endl;
     postOrder(root);
-
+    cout<<endl;
 }

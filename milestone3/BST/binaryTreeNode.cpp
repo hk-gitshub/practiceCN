@@ -19,6 +19,18 @@ class binaryTreeNode
         }
 };
 
+template <typename T>
+ 	class Node{
+    	public:
+    	T data;
+    	Node<T> *next;
+    
+    	Node(T data) {
+        	this->data = data;
+        	this->next = NULL;
+    	}
+ 	};
+
 binaryTreeNode<int> * takeInputLevelWise(){
     int rootData;
     cout<<"Enter the root data"<<endl;
