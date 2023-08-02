@@ -45,3 +45,14 @@ int partition(int input[], int start, int end){
 	{
     		quickSort(input, 0, size - 1);
 	}
+
+int main(){
+	int arr[]={2, 3, 6, 3, 10, 5, 2};
+    int size=sizeof(arr)/sizeof(arr[0]);
+
+    quickSort(arr, size);
+	cout<<"sorted array using merge sort:"<<endl;
+	for (int i=0; i<size; i++){
+		cout<<arr[i]<<" ";
+	}
+}
