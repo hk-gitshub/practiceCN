@@ -1,0 +1,32 @@
+#container{
+    height: 75vh;
+    width: 75vw;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+#container div{
+    height: 100px;
+    width: 100px;
+
+}
+
+#div1{
+    background-color: red;
+    order: 1;
+}
+
+#div2{
+    background-color: aqua;
+    order: 5;       /* low prority*/
+}
+
+#div3{
+    background-color: purple;
+}
+
+#div4{
+    background-color: beige;
+    order: -3;      /*high prority*/
+}

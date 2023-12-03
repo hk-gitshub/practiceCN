@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title> React App </title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+
+    <script type="text/babel">
+
+        const App=()=>{
+
+            const tableData=[
+                {
+                    name: "hardik",
+                    age: 23,
+                    degree: "BE"
+                },
+                {
+                    name: "shubham",
+                    age: 26,
+                    degree: "BTech"
+                },
+                {
+                    name: "bijay",
+                    age: 28,
+                    degree: "BCA"
+                },
+                {
+                    name: "supriya",
+                    age: 22,
+                    degree: "BTech"
+                }
+            ]
+
+            return(
+                <>
+                    <table border="1px">
+                        <thead> 
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Degree</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                                {tableData.map((i, index)=>{
+                                    return(
+                                        <tr key="index">
+                                            <td>{i.name}</td>
+                                            <td>{i.age}</td>
+                                            <td>{i.degree}</td>
+                                        </tr>
+                                    )
+                                })}
+                        </tbody>
+                    
+                    </table>
+                </>
+            )
+        }
+
+        const reactElement=ReactDOM.createRoot(document.getElementById("root"))
+        reactElement.render(<App />)
+    </script>
+</body>
+</html>

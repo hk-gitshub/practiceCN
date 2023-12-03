@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>React App</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+    function sum(){
+            return 5+6;
+        }
+      const App =()=>{
+        let name="hardik"
+        let age=23;
+        let demo=null;
+        let demo2=null;
+        let demoBoolean=false;
+
+          return (
+            <>
+              <h1> hello {name}</h1>
+               <p> my age is {age}</p>
+               <p> print null: {null}</p>
+               <p> print undefine: {demo2}</p>
+               <p> print boolean: {demoBoolean.toString()}</p>
+               <p> 
+                sum of 2 value is: {sum()}
+                </p>
+               
+            </>
+          );
+      }
+      
+      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
+  </body>
+</html>

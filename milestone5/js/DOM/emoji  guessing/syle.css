@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    /* box-sizing: border-box; */
+    font-family: sans-serif;   
+}
+
+#container{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    width: 500px;
+    height: 80vh;
+    background: #ccebe0;
+    margin: auto;
+    border-radius: 6px;
+    padding: 30px;
+}
+
+#description{
+    border-radius: 5px;
+    padding: 6px;
+}
+
+#guessEmoji{
+    font-size: 100px;
+}
+
+/* #answer{
+    font-size: 10px;
+} */
