@@ -1,9 +1,14 @@
 import React from "react";
+import MovieCard from "./Movie-card";
+import "./movieCard.css"
 
-class movie extends React.Component {
-  render(){
-    return <h1>hello world</h1>
-  }
-}
+const App=()=>{
+  return(
+  <>
+   <h1>Movie App</h1>
+   <MovieCard />
+  </>
+  );
+};
 
-export default movie;
+export default App

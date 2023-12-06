@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>React App</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    let customers = [];
+    const capacity = 25;
+    let seatsLeft = 25;
+    let nameRef=React.createRef()
+    let countRef=React.createRef()
+    let phoneRef=React.createRef()
+
+
+    const formHandler=(event)=>{
+      event.preventDefault();
+
+      customers.unshift(
+        {
+           name: nameRef,
+           count: countRef,
+           phone:phoneRef
+        }
+      );
+      console.log(customers)
+       rootElement.render(<App />);
+    };
+
+    const Form = () => (
+      <form onSubmit={formHandler}>
+        <input type="text" placeholder="Guest count" ref={countRef}/>
+        <input type="text" placeholder="Primary guest name" ref={nameRef}/>
+        <input type="text" placeholder="Phone number" ref={phoneRef}/>
+        <button> Add Entry</button>
+      </form>
+    );
+
+    // Create form submit handler here
+
+    const App = () => (
+      <div className="App" style={{ textAlign: "center" }}>
+        <div>
+          <h2>Total Capacity: {capacity} </h2>
+          <h2>Seats Left: {seatsLeft}</h2>
+        </div>
+
+        <Form />
+
+        {/* Complete table to show records of customers */}
+        <table border="1px" style={{ margin: "auto" }}>
+          <thead>
+            <tr>
+              <th>Count</th> 
+              <th>Name</th>  
+              <th>Phone</th>  
+              <th>Check In</th>  
+              <th>Check Out</th>  
+              <th>Status</th>
+              <th>Remove Entry</th>    
+            </tr>  
+          </thead>
+
+          <tbody>
+            {customers.map((customer) =>(
+              <tr>
+                <td>{customer.count}</td>  
+                <td>{customer.name}</td>  
+                <td>{customer.phone}</td>  
+                <td></td>  
+                <td></td>  
+                <td></td>  
+                <td></td>  
+              </tr>
+            ))
+              
+            }
+          </tbody>
+
+        </table>
+      </div>
+    );
+
+    const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+    rootElement.render(<App />);
+  </script>
+
+</body>
+
+</html>

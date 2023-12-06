@@ -1,0 +1,39 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 30px 20px;
+}
+
+.heroDetails{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    margin-top: 2rem;
+    /* width: 90%; */
+    margin: auto;
+    /* text-align: center; */
+}
+
+.heroDetails .name{
+    font-weight: bold;
+}
+
+.skills{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    /* width: 100%; */
+    justify-content: space-between;
+}
+.skills li{
+    background-color: aqua;
+    /* margin: 20px; */
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.about{
+    margin-top: 20px;
+    word-spacing: 5px;
+}
