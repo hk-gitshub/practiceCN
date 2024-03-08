@@ -1,0 +1,35 @@
+.nav{
+    background: blue;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+    margin: 15px 10px;
+}
+
+.cartContainer {
+    cursor: pointer;
+    position: relative;
+}
+
+.cartImg {
+    height: 48px;
+    margin-right: 20px;
+}
+
+.cartCount {
+    background-color: orange;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: 18px;
+    top: 4px;
+}

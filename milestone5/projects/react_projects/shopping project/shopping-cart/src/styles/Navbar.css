@@ -1,0 +1,18 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 10px 20px 17px lightblue;
+}
+
+.left-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    cursor: pointer;
+    color: #224957;
+    font-weight: 500;
+    font-size: medium;
+    margin: 0 10px;
+}

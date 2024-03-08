@@ -1,0 +1,10 @@
+.display{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    margin-top: 10px;
+}

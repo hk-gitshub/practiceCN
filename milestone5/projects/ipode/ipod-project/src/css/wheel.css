@@ -1,0 +1,60 @@
+.main-container{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+.control{
+    color: rgb(210,210,210);
+    font-weight: 900;
+    position: absolute;
+}
+
+#menu{
+    left: 38%;
+    top: 11%;
+    font-weight: 900;
+    font-size: 18px;
+    width: 40px;
+    height: 20px;
+}
+
+#bkd{
+    left: 10%;
+    top: 45%;
+    font-size: 24px;
+}
+
+#fwd{
+    right: 10%;
+    top: 45%;
+    font-size: 24px;
+}
+
+#play{
+    left: 43%;
+    bottom: 11%;
+    height: 20px;
+}
+
+#center{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(210,210,210);
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 31%;
+}

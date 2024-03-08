@@ -1,0 +1,27 @@
+.contaner {
+    width: 100vw;
+    height: 100vh;
+    /* margin: auto; */
+}
+
+.inps-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    background-color: #E7621F;
+}
+
+hr {
+    width: 95%;
+    color: white;
+    /* margin-bottom: 5px; */
+}
+
+.inp {
+    margin: 10px auto;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}

@@ -1,0 +1,33 @@
+/* Write code for your CSS here */
+
+.app{
+    margin: 10%
+}
+
+.name{
+    font-weight: bold;
+}
+
+.skills{
+    display: flex;
+    gap:  10px;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding-left: 0;
+
+}
+
+.elements{
+    list-style: none;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+    /* align-items: center; */
+}
+
+.about{
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}

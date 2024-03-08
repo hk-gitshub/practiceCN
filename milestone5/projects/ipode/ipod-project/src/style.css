@@ -1,0 +1,35 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .main {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: black solid 3px;
+    /* margin: auto; */
+    position: relative;
+  }
+  
+  .main div {
+    position: absolute;
+    text-align: center;
+  }
+  /* 
+  .pause {
+    position: inherit;
+  }
+  
+  .fwd {
+    position: inherit;
+  }
+  
+  .bkd {
+    position: inherit;
+  }
+  
+  .play {
+    position: inherit;
+  } */
+  

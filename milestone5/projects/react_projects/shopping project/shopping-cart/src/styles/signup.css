@@ -1,0 +1,48 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 10px 20px 17px lightblue;
+}
+
+.left-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    cursor: pointer;
+    color: #224957;
+    font-weight: 500;
+    font-size: medium;
+    margin: 0 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-inp {
+    background: #f4f6f8;
+    border: 1px solid #7064e5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #7064e5;
+    font-size: 1.2em;
+    padding: 12px;
+    margin: 10px auto;
+}
+
+.form-btn{
+    background-color: #7064e5;
+  border: 1px solid #7064e5;
+  color: #fff;
+  cursor: pointer;
+  height: 2.25rem;
+  width: 8rem;
+  border-radius: 11px;
+  font-size: 1.2rem;
+  margin: 10px auto;
+}

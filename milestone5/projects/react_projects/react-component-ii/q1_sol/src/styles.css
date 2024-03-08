@@ -1,0 +1,50 @@
+    /* Add CSS here */
+
+body{
+    background-color: black;
+}
+
+.darkTheme{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2B2D42;
+    color: white;
+}
+
+.lightTheme{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    color: #2B2D42;
+}
+
+.darkTheme .btn, .lightTheme .btn{
+    text-align: center;
+    margin: 5px;
+
+}
+
+.darkTheme button{
+    width: 160px;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: white;
+    color: #2B2D42;
+    border: solid black 2px;
+    font-size: large;
+    font-weight: bolder;
+    /* margin: auto; */
+    /* text-align: center; */
+}
+
+.lightTheme button{
+    width: 160px;
+    height: 40px;
+    color: white;
+    box-sizing: border-box;
+    background-color: #2B2D42;
+    border: solid black 2px;
+    font-size: large;
+    font-weight: bolder;
+    /* margin: auto; */
+}
